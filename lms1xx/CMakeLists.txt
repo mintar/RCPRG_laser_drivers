@@ -108,8 +108,8 @@ add_executable(set_config src/setConfig.cpp)
 # add_dependencies(LMS1xx_node LMS1xx_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(LMS1xx_node lms1xx ${catkin_LIBRARIES})
-target_link_libraries(set_config lms1xx ${catkin_LIBRARIES})
+target_link_libraries(LMS1xx_node ${catkin_LIBRARIES})
+target_link_libraries(set_config ${catkin_LIBRARIES})
 
 #target_link_libraries ( test_libLMS1xx LMS1xx )
 
